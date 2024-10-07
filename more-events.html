@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore more events</h1>
+    <button id="btn-more">Events</button>
+    <input id="text-field" type="text">
+    <script>
+        // 111111111111111111
+        // document.getElementById('text-field').addEventListener('focus',function(){
+        //     console.log('event trigger inside the input field')
+        // })
+
+
+
+        // 222222222222222222
+        // document.getElementById('text-field').addEventListener('blur',function(){
+        //     console.log('event trigger inside the input field blur')
+        // })
+
+
+        
+        // 333333333333333333
+        // document.getElementById('text-field').addEventListener('keydown',function(event){
+        //     console.log(event.target.value)
+        // })
+
+        // 44444444444444444
+        // document.getElementById('text-field').addEventListener('keypress',function(event){
+        //     console.log(event.target.value)
+        // })
+
+        // 5555555555555555
+        // document.getElementById('text-field').addEventListener('keydown',function(event){
+        //     console.log(event.target.value)
+        // })
+
+        // 6666666666666666
+        document.getElementById('text-field').addEventListener('keyup',function(event){
+            console.log(event.target.value)
+        })
+
+        document.getElementById('btn-more').addEventListener('mousemove',function(){ //click , mouseenter , mousemove , focus , blur
+            console.log('events trigger')
+        })
+    </script>
+</body>
+</html>

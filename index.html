@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dom EVENTS</title>
+</head>
+<body>
+    <h1 onclick="console.log('i am clicked')">dom r aske special events</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(65)">Another button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor = 'yellow'">make yellow</button>
+    <br>
+    <button onclick="makeRed()">make red</button>
+    <button id="make-blue">make blue</button>
+    <br>
+    <button id="make-purple">make purple</button>
+    <br>
+    <br>
+    <button id="make-pink">Make Pink</button>
+    <br>
+    <br>
+    <button id="make-green">Make Green</button>
+    <br>
+    <br>
+    <button id="make-goldenrod">Make GoldenRod</button>
+
+    <script src="events.js"></script>
+    <script>
+        // 222222222222222222
+        function makeRed(){
+            document.body.style.backgroundColor = 'red'
+        }
+        // 3333333333333333333333
+        const makeBlue = document.getElementById('make-blue');
+        // console.log(makeBlue);
+        makeBlue.onclick = makeblue;
+        function makeblue(){
+            document.body.style.backgroundColor = 'blue'
+        }
+
+        // 4444444444444444444444444
+        const purpleButton = document.getElementById('make-purple');
+        purpleButton.onclick = function makePurple(){
+            document.body.style.backgroundColor = 'purple'
+        }
+
+        // 55555555555555555555555555555555555
+        const pinkButton = document.getElementById('make-pink');
+        pinkButton.addEventListener('click',function makePink(){
+            document.body.style.backgroundColor = 'pink'
+        })
+
+        // 6666666666666666666666666666666666666
+        const greenButton = document.getElementById('make-green');
+        greenButton.addEventListener('click',makeGreen);
+        function makeGreen(){
+            document.body.style.backgroundColor = 'green';
+        }
+
+        // most importent 777777777777777777777777777777777
+        document.getElementById('make-goldenrod').addEventListener('click',function(){
+            document.body.style.backgroundColor  = 'goldenrod'
+        })
+
+        // 88888888888888888888888888888
+</script>
+</body>
+</html>
